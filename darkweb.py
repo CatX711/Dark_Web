@@ -1,4 +1,5 @@
 from time import sleep
+from malloc import malloc # test lib made by me
 import random
 # ideas: dark-mart
 
