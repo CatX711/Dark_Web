@@ -23,3 +23,7 @@ def malloc(variable_name, new_value):
 
 # Example usage
 malloc("my_variable", 42)
+
+# i accidentally found out what 8j is lol
+# balls = 7 + 8j
+# print(balls)     prints: (7+8j)  

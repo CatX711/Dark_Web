@@ -1,7 +1,8 @@
 from time import sleep
 from malloc import malloc # test lib made by me
 import random
-# ideas: dark-mart
+import pyautogui
+# ideas: dark-mart, mine --bitc
 
 
 # variables
@@ -120,11 +121,23 @@ print("The Login Page stands before you.\n\n\n")
 sleep(2)
 
 print("8------------------------------------------------------8")
-user = input("Please enter in your username: ")
-password = input("That is correct. Please enter your password: ")
+user = pyautogui.password(
+    text="Enter your Password",
+    title="Username Entry",
+    default="",
+    mask="*"
+)
+
+print("\n\nStep one complete.")
+password = pyautogui.password(
+    text="Login",
+    title="Password Entry",
+    default="",
+    mask="*"
+)
 
 sleep(3)
-print("\n\nSuccessfully logged in.\n\n\n\n\n\n\n\n\n")
+continue0 = input(f"\n\nSuccessfully logged in. Welcome, {user}. \n\n\n\n\n\n\n\n\n")
 sleep(2)
 continue1 = input("""
 
@@ -146,34 +159,35 @@ Some text appears on the screen.
 
 Press enter to continue. 
 """)
-print("\n\n\nLogging into DRAx Ultim...\n")
+print("\n\n\nLogging into DRAx Ultim...")
 sleep(1)
-print("[|     ] Establishing data connection...\n")
+print("[|     ] Establishing data connection...")
 sleep(1)
-print("[||    ] Copying IP Address...\n")
+print("[||    ] Copying IP Address...")
 sleep(1)
-print("[|||   ] Calculating DRAx Ultim wait times...\n")
+print("[|||   ] Calculating DRAx Ultim wait times...")
 sleep(1)
-print("[||||  ] Sending information to servers...\n")
+print("[||||  ] Sending information to servers...")
 sleep(1)
-print("[||||| ] Bypassing safety regulations...\n")
+print("[||||| ] Bypassing safety regulations...")
 sleep(1)
-print("[||||||] Finalizing actions...\n")
+print("[||||||] Finalizing actions...")
 sleep(3)
 print("\n\nWelcome to the Dark Web.")
 
 print("DRAx Ultim takes no responsibility for anything that may occur on the dark web.")
+
 
 # Main loop
 while True:
 
     # starter commands for beginners. it disappears after 5 commands are ran
     while commands_ran > 6:
-        print("# Starter commands: dark--mart, commands, user--hack, explore --deeper, logoff, drax-info")  #! FIX THIS!!!
+        print("# Starter commands: dark--mart, commands, user--hack, explore --deeper, logoff, drax-info")  #! FIX THIS!!! :(
     choice = input("> ")
     if choice == "dark--mart":
         print("\nEntering the dark mart...")
 
         commands_ran += 1
 
-    
+        
